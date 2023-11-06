@@ -1,0 +1,90 @@
+
+ body {
+            margin: 0;
+            padding: 0;
+            background-image: url('happyop.gif'); /* Replace with your background image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family:fantasy;
+            color: white;
+			position: relative;
+          
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .left-content {
+            flex: 1;
+        }
+        .right-content {
+            flex: 1;
+            text-align: right;
+     
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .transparent-image {
+            opacity: 0;
+            transition: opacity 1.5s;
+        }
+        .transparent-image.fade-in {
+            opacity: 1;
+        }
+		
+		
+	
+         }
+        .overlay-panel {
+            position: fixed; /* Position the panel fixed at the top */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%; /* Make the panel cover the entire screen */
+            background: rgba(0, 0, 0, 0.7); /* Background color with transparency */
+            padding: 10px; /* Adjust the padding as needed */
+        }
+        .overlay-image {
+            width: 100%; /* Cover the full width of the panel */
+            height: 100%; /* Cover the full height of the panel */
+            display: block;
+        }
+        .panel-links {
+            text-align: center;
+        }
+        .panel-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px; /* Adjust the margin to separate links */
+        }
+		
+		.top-center-text {
+            position: absolute;
+            top: 0%; /* Center text vertically */
+            left: 50%; /* Center text horizontally */
+            transform: translate(-50%); /* Center the text */
+            font-size: 100px; /* Font size of the text */
+			 text-align: center;
+			
+			}
+			
+			
+			.top-left {
+            position: absolute; /* Position the content absolutely */
+            top: 10px; /* Position the content 10 pixels from the top */
+            left: 10px; /* Position the content 10 pixels from the left */
+            font-size: 18px; /* Font size of the content */
+        }
+		
+		
+		 .top-right-link {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+			font-size: 18px
+        }
+		
